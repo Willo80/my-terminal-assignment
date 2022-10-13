@@ -7,11 +7,11 @@ import datetime
 
 while True:
     try:
-        name = input("\nPlease type your FULL NAME: ").title().strip()
+        name = input("\nPlease type your name: ").title().strip()
         first, last = name.split(" ")
         break
     except ValueError:
-         print("\nPlease type in your first name AND surname")
+         print("\nBoth your first AND surname is required")
 
 print("\nWhat would you like to do first " + first + "?" + " Improve your diabetes knowledge or record your BGL reading?")
 
