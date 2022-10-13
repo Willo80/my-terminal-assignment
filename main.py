@@ -2,19 +2,23 @@
 import datetime
 
 
-
-first_name = input("\nPlease type you first name: ")
-
-
-# user has an option to play game or input reading
-print("\nWhat would you like to do first " + first_name + "?" + " Improve your diabetes knowledge or record your BGL reading?")
+# # user has an option to play game or input reading
 
 
+while True:
+    try:
+        name = input("\nPlease type your FULL NAME: ").title().strip()
+        first, last = name.split(" ")
+        break
+    except ValueError:
+         print("\nPlease type in your first name AND surname")
 
-
-
+print("\nWhat would you like to do first " + first + "?" + " Improve your diabetes knowledge or record your BGL reading?")
 
 answer = input ("\nType YES for a quick game or NO to enter your reading: ") 
+
+
+
 
 # User will now complete the glucose recording pathway and skip the game
 if answer.lower() != "yes":
