@@ -25,7 +25,10 @@ if answer.lower() != "yes":
 # User will now complete the glucose recording pathway and skip the game    
     # glucose_reading = input("\nEnter the reading from your finger prick test: ")
     glucose_reading = float(input("\nEnter the number reading from your finger prick test: "))
-    Fasting = input("Were you Fasting, Yes or No?: ")
+    fasting = input("Were you fasting, Yes or No?: ")
+    if glucose_reading < 8 and fasting == "Yes":
+        print("\nYour blood glucose level is normal")
+
     
     
     # The date and time of input is recorded for future reference
