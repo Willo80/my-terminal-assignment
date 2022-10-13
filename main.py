@@ -15,16 +15,16 @@ while True:
 
 print("\nWhat would you like to do first " + first + "?" + " Improve your diabetes knowledge or record your BGL reading?")
 
+
+
+
+
 answer = input ("\nType YES for a quick game or NO to enter your reading: ") 
 
-
-
-
-# User will now complete the glucose recording pathway and skip the game
 if answer.lower() != "yes":
+# User will now complete the glucose recording pathway and skip the game    
     glucose_reading = input("\nEnter the reading from your finger prick test: ")
    
-
     # The date and time of input is recorded for future reference
     print(f"\nThe time and date of your input is {datetime.datetime.now()}")
 
