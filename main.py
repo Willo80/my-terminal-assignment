@@ -130,5 +130,5 @@ else:
 
     
     print("\nYou scored " + str(score) + "%" )
-    # option to score each question by 1 point and then convert to % ie: print("\nYou scored " + str((score / 4) * 100) + "%" ) 
+    # option to score each question by 1 point and then convert to % ie: print("\nYou scored " + str((score / 4) * 100) + "%" )
 
