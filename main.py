@@ -22,7 +22,7 @@ answer = input ("\nType YES for a quick game or NO to enter your reading: ")
 
 # User will now complete the glucose recording pathway and skip the game
 if answer.lower() != "yes":
-    glucose_reading = input ("\nEnter the reading from your finger prick test: ")
+    glucose_reading = input("\nEnter the reading from your finger prick test: ")
    
 
     # The date and time of input is recorded for future reference
@@ -45,12 +45,13 @@ if answer.lower() != "yes":
 else:
     # begin_quiz = input("Welcome to this quick knowldege quiz, would you like to play now?: " )
     print("\nExcellent! There are 4 questions, try and score 100%")
+    # print("Type 'quit' to move to the next question")
     play = input("Okay, are you ready? ").lower()
     
     if play != "yes":
         quit()
     
-    print("\nHere is your first question!")
+    print("\nYou can type the word 'skip' to move to the next question if you cannot answer.\nHere is your first question!")
 
     score = 0
     
@@ -63,9 +64,11 @@ else:
         print("Correct!")
         score += 25
     else: 
-        print("\nThat is not right")
+        print("\nIncorrect, try again!")
     while quest_answer != "banana":
         quest_answer = input("\nQuestion 1 - Which of these will control your blood sugar better: 🍫chocolate or 🍌banana?: ").lower()
+        if quest_answer == 'skip':
+            break
         if quest_answer == "banana":
             print("\nCorrect!")
             
@@ -76,9 +79,11 @@ else:
         print("\nCorrect!")
         score += 25
     else: 
-        print("\nThat is not right")
+        print("\nIncorrect, try again!")
     while quest_answer != "low":
         quest_answer = input("\nQuestion 2 - Look out for food with a ___ Glycemic Index: high or low?: ").lower()
+        if quest_answer == 'skip':
+            break
         if quest_answer == "low":
             print("\nCorrect!")
 
@@ -89,9 +94,11 @@ else:
         print("\nCorrect!")
         score += 25
     else: 
-        print("\nThat is not right")
+        print("\nIncorrect, try again!")
     while quest_answer != "true":
         quest_answer = input("\nQuestion 3 - Daily exercise will help manage your diabetes: true or false?: ").lower()
+        if quest_answer == 'skip':
+            break
         if quest_answer == "true":
             print("\nCorrect!")
 
@@ -102,9 +109,11 @@ else:
         print("\nCorrect!")
         score += 25
     else: 
-        print("\nThat is not right")
+        print("\nIncorrect, try again!")
     while quest_answer != "before":
         quest_answer = input("\nQuestion 4 - Should you do a glucose reading before or after eating: before or after?: ").lower()
+        if quest_answer == 'skip':
+            break
         if quest_answer == "before":
             print("\nCorrect!")
 
