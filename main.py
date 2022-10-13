@@ -23,21 +23,24 @@ answer = input ("\nType YES for a quick game or NO to enter your reading: ")
 
 if answer.lower() != "yes":
 # User will now complete the glucose recording pathway and skip the game    
-    glucose_reading = input("\nEnter the reading from your finger prick test: ")
-   
+    # glucose_reading = input("\nEnter the reading from your finger prick test: ")
+    glucose_reading = float(input("\nEnter the number reading from your finger prick test: "))
+    Fasting = input("Were you Fasting, Yes or No?: ")
+    
+    
     # The date and time of input is recorded for future reference
     print(f"\nThe time and date of your input is {datetime.datetime.now()}")
 
     # determine if fasting as this impacts the results
-    input("\nFor your glucose reading of " + glucose_reading + ", were you fasting: ")
-    if answer.lower() == "no" and "glucose_reading > 10":
-        print("\nYour blood glucose level is too high")
-        # need to fix this code as not registering if it high or low
-    elif answer.lower() == "yes" and "glucose_reading < 8": 
-        print("\nYour blood glucose level is normal") 
+    # input("\nFor your glucose reading of " + glucose_reading + ", were you fasting: ").capitalize()
+    # if answer == "no" and "glucose_reading > 10":
+    #     print("\nYour blood glucose level is too high")
+    #     # need to fix this code as not registering if it high or low
+    # elif answer == "yes" and "glucose_reading < 8": 
+    #     print("\nYour blood glucose level is normal") 
         
-    print("\nContinue foccussing on your carb intake and do daily exercises to manage your glucose levels")
-    exit()
+    # print("\nContinue foccussing on your carb intake and do daily exercises to manage your glucose levels")
+    # exit()
 
        
 # add error handling here so that can only add ints and if incorrect must go back to inout else continue
