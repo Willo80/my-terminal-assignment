@@ -17,6 +17,7 @@ print("\nWhat would you like to do first " + first + "?" + " Improve your diabet
 play = "Yes"
 fasting = "F"
 
+# User will now complete the glucose recording pathway and skip the game
 
 play = input ("\nType Yes for a quick game or NO to enter your reading: ").lower()
 if play != "yes":
@@ -26,46 +27,25 @@ if play != "yes":
     if glucose_reading < 8 and fasting == "F":
         print("\nYour blood glucose level is normal")
 
+    elif glucose_reading > 8 and fasting == "F":
+        print("\nYour reading is High, try to manage your diet and excersie, but see how a second reading goes today")
+
     elif glucose_reading > 8 and fasting != "F":
         print("\nYour reading is high, but this could be because you had just eaten, a second fasting reading may be more accurate")
 
-
-
-
-
-# User will now complete the glucose recording pathway and skip the game
-    # glucose_reading = input("\nEnter the reading from your finger prick test: ")
-    
-    
-
-    
-        
+    elif glucose_reading < 8 and fasting != "F":
+        print("\nYour reading is low for having just eaten, a second fasting reading may be more accurate")
 
     # The date and time of input is recorded for future reference
     print(f"\nThe time and date of your input is {datetime.datetime.now()}")
 
-    # elif glucose_reading > 8 and fasting != "Yes":
-    # print("\nYour blood glucose level is too high")
-    # print("\nContinue foccussing on your carb intake and do daily exercises to manage your glucose levels")
-    # exit()
+    exit()
 
-    # determine if fasting as this impacts the results
-    # input("\nFor your glucose reading of " + glucose_reading + ", were you fasting: ").capitalize()
-    # if answer == "no" and "glucose_reading > 10":
-    #     print("\nYour blood glucose level is too high")
-    #     # need to fix this code as not registering if it high or low
-    # elif answer == "yes" and "glucose_reading < 8": 
-    #     print("\nYour blood glucose level is normal") 
-        
-    # print("\nContinue foccussing on your carb intake and do daily exercises to manage your glucose levels")
-    # exit()
 
-       
-# add error handling here so that can only add ints and if incorrect must go back to inout else continue
-
-else:
-    # begin_quiz = input("Welcome to this quick knowldege quiz, would you like to play now?: " )
+# begin_quiz = input("Welcome to this quick knowldege quiz, would you like to play now?: " )
+elif play == "yes":
     print("\nExcellent! There are 4 questions, try and score 100%")
+    
     # print("Type 'quit' to move to the next question")
     play = input("Okay, are you ready? ").lower()
     
@@ -73,11 +53,6 @@ else:
         quit()
     
     print("\nYou can type the word 'skip' to move to the next question if you cannot answer.\nHere is your first question!")
-
-    
-
- 
-
 
 # Questions as Class function from my created class function
 
@@ -106,9 +81,8 @@ def begin_quiz(questions):
         else:
             print("\nThat is incorrect")
 
-        
-
-
-    print("\nYou scored " + str(score) + "%" + "Learn more about diabetes \nfor better control over your wellness" )
+    print("\nYou scored " + str(score) + "%" + "Learn more about diabetes for better control over your wellness" )
 
 begin_quiz(questions)
+
+exit()
