@@ -1,5 +1,3 @@
-
-
 class Question:
     """This is the class name for the quesions."""
     def __init__(self, ask, answer):
