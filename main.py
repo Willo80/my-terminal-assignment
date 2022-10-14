@@ -1,6 +1,9 @@
 # Diabetes tracker and educational game
 import datetime
 from Question import Question
+import sys
+from termcolor import colored, cprint
+
 
 def main():
 # Wrapped the entire code so that the user can have the option to restart at the end of quiz
@@ -11,7 +14,7 @@ def main():
             first, last = name.split(" ")
             break
         except ValueError:
-            print("\nBoth your first AND surname is required")
+            cprint("\nBoth your first AND surname is required", "green")
 
     # user has an option to play game or input reading
     print("\nWhat would you like to do first " + first + "?" + " Improve your diabetes knowledge or record your BGL reading?")

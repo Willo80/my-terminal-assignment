@@ -1,32 +1,16 @@
-#menu select button
+import sys
 
-    from simple_term_menu import TerminalMenu
+from termcolor import colored, cprint
 
-    def main():
-        options = ["QUIZ", "BGL ENTRY", "QUIT"]
-        terminal_menu = TerminalMenu(options)
-        menu_entry_index = terminal_menu.show()
-        print(f"You have selected {options[menu_entry_index]}!")
+text = colored("Hello, World!", "red", attrs=["reverse", "blink"])
+print(text)
+cprint("Hello, World!", "green", "on_red")
 
-    if __name__ == "__main__":
-        main()
+print_red_on_cyan = lambda x: cprint(x, "red", "on_cyan")
+print_red_on_cyan("Hello, World!")
+print_red_on_cyan("Hello, Universe!")
 
+for i in range(10):
+    cprint(i, "magenta", end=" ")
 
-
-
-
-
-
-
-# import termcolor
-
-
-
-#  # option to play again and improve score or quit  
-# def play_again():
-#     response = input (" Would you like to have another go? (Yes or No): ")
-#     response = response.lower()
-#     if response == "Yes":
-#         return True
-#     else:
-#         return False
+cprint("Attention!", "red", attrs=["bold"], file=sys.stderr)
