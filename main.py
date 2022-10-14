@@ -15,9 +15,20 @@ while True:
 print("\nWhat would you like to do first " + first + "?" + " Improve your diabetes knowledge or record your BGL reading?")
 
 play = "Yes"
+fasting = "F"
+
+
 play = input ("\nType Yes for a quick game or NO to enter your reading: ").lower()
 if play != "yes":
     glucose_reading = float(input("\nEnter the number reading from your finger prick test: "))
+    fasting = input("\nType in F if you were fasting or NF if you were not fastng: ").capitalize()
+
+    if glucose_reading < 8 and fasting == "F":
+        print("\nYour blood glucose level is normal")
+
+    elif glucose_reading > 8 and fasting != "F":
+        print("\nYour reading is high, but this could be because you had just eaten, a second fasting reading may be more accurate")
+
 
 
 
@@ -25,19 +36,18 @@ if play != "yes":
 # User will now complete the glucose recording pathway and skip the game
     # glucose_reading = input("\nEnter the reading from your finger prick test: ")
     
-    fasting = input("\nWere you fasting, Yes or No?: ").title
-    if glucose_reading < 8 and fasting == "Yes":
-        print("\nYour blood glucose level is normal")
-    elif glucose_reading < 8 and fasting != "Yes":
-        print("\nYour reading is good, but be sure to eat appropriatly so you do not to become hypoglyceamic")
+    
+
+    
+        
 
     # The date and time of input is recorded for future reference
     print(f"\nThe time and date of your input is {datetime.datetime.now()}")
 
-elif glucose_reading > 8 and fasting != "Yes":
-    print("\nYour blood glucose level is too high")
-    print("\nContinue foccussing on your carb intake and do daily exercises to manage your glucose levels")
-    exit()
+    # elif glucose_reading > 8 and fasting != "Yes":
+    # print("\nYour blood glucose level is too high")
+    # print("\nContinue foccussing on your carb intake and do daily exercises to manage your glucose levels")
+    # exit()
 
     # determine if fasting as this impacts the results
     # input("\nFor your glucose reading of " + glucose_reading + ", were you fasting: ").capitalize()
