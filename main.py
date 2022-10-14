@@ -62,95 +62,48 @@ else:
     
     print("\nYou can type the word 'skip' to move to the next question if you cannot answer.\nHere is your first question!")
 
-    score = 0
     
-    # add the option prompt like the BGL and game one above
-
-    # Quest 1
-    # user gets another chance to get the asnwer correct but will not get points for a wrong answer
-    quest_answer = input("\nQuestion 1 - Which of these will control your blood sugar better: 🍫chocolate or 🍌banana?: ").lower()
-    if quest_answer == "banana":
-        print("Correct!")
-        score += 25
-    else: 
-        print("\nIncorrect, try again!")
-    while quest_answer != "banana":
-        quest_answer = input("\nQuestion 1 - Which of these will control your blood sugar better: 🍫chocolate or 🍌banana?: ").lower()
-        if quest_answer == 'skip':
-            break
-        if quest_answer == "banana":
-            print("\nCorrect!")
-            
-
-    # Quest 2
-    quest_answer = input("\nQuestion 2 - Look out for food with a ___ Glycemic Index: high or low?: ").lower()
-    if quest_answer == "low":
-        print("\nCorrect!")
-        score += 25
-    else: 
-        print("\nIncorrect, try again!")
-    while quest_answer != "low":
-        quest_answer = input("\nQuestion 2 - Look out for food with a ___ Glycemic Index: high or low?: ").lower()
-        if quest_answer == 'skip':
-            break
-        if quest_answer == "low":
-            print("\nCorrect!")
-
-   
-    # Quest 3
-    quest_answer = input("\nQuestion 3 - Daily exercise will help manage your diabetes: true or false?: ").lower()
-    if quest_answer == "true":
-        print("\nCorrect!")
-        score += 25
-    else: 
-        print("\nIncorrect, try again!")
-    while quest_answer != "true":
-        quest_answer = input("\nQuestion 3 - Daily exercise will help manage your diabetes: true or false?: ").lower()
-        if quest_answer == 'skip':
-            break
-        if quest_answer == "true":
-            print("\nCorrect!")
+    
 
 
-    # Quest 4
-    quest_answer = input("\nQuestion 4 - Should you do a glucose reading before or after eating: before or after?: ").lower()
-    if quest_answer == "before":
-        print("\nCorrect!")
-        score += 25
-    else: 
-        print("\nIncorrect, try again!")
-    while quest_answer != "before":
-        quest_answer = input("\nQuestion 4 - Should you do a glucose reading before or after eating: before or after?: ").lower()
-        if quest_answer == 'skip':
-            break
-        if quest_answer == "before":
-            print("\nCorrect!")
+
+    # # Quest 4
+    # quest_answer = input("\nQuestion 4 - Should you do a glucose reading before or after eating: before or after?: ").lower()
+    # if quest_answer == "before":
+    #     print("\nCorrect!")
+    #     score += 25
+    # else: 
+    #     print("\nIncorrect, try again!")
+    # while quest_answer != "before":
+    #     quest_answer = input("\nQuestion 4 - Should you do a glucose reading before or after eating: before or after?: ").lower()
+    #     if quest_answer == 'skip':
+    #         break
+    #     if quest_answer == "before":
+    #         print("\nCorrect!")
 
     
-    print("\nYou scored " + str(score) + "%" )
-    # option to score each question by 1 point and then convert to % ie: print("\nYou scored " + str((score / 4) * 100) + "%" )
+    # print("\nYou scored " + str(score) + "%" )
+ 
 
 
 
+# Questions as Class function
+# imported Question.py to keep code DRY here.
 
-
-
-# Questions as dictionary
-
-# from Question import Question
+from Question import Question
 
 ask_question = [
-"Which of these will control your blood sugar better?\n(a) Chocolate\n(b) Banana\n(c) Pizza\n\n",
-"Look out for food with a ___ Glycemic Index: high or low?\n(a) High\n(b) Low\n\n",
-"Daily exercise will help manage your diabetes:\n(a) True\n(b) False\n\n",
-"When should you do a glucose reading, before or after eating?\n(a) Makes no difference\n(b) After\n(c) Before\n\n",
+"\nWhich of these will control your blood sugar better?\n(a) Chocolate\n(b) Banana\n(c) Pizza\n\n",
+"\nLook out for food with a ___ Glycemic Index: high or low?\n(a) High\n(b) Low\n\n",
+"\nDaily exercise will help manage your diabetes:\n(a) True\n(b) False\n\n",
+"\nWhen should you do a finger prick reading?\n\n(a) After eating\n(b) Before eating\n\n",
 ]
 
 questions = [
     Question(ask_question[0], "b"),
     Question(ask_question[1], "b"),
     Question(ask_question[2], "a"),
-    Question(ask_question[3], "c"),
+    Question(ask_question[3], "b"),
 ]
 
 def begin_quiz(questions):
@@ -159,7 +112,14 @@ def begin_quiz(questions):
     for question in questions:
         answer = input(question.ask)
         if answer == question.answer:
+            print("\nCorrect!")
             score +=25
-    print("You scored " + str(score) + "%" )
+        else:
+            print("\nThat is incorrect")
+
+        
+
+
+    print("\nYou scored " + str(score) + "%" + "Learn more about diabetes \nfor better control over your wellness" )
 
 begin_quiz(questions)
