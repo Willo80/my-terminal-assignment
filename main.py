@@ -1,28 +1,26 @@
 # Diabetes tracker and educational game
 import datetime
+from Question import Question
 
-
-# # user has an option to play game or input reading
-
-
+# user inputs full name
 while True:
     try:
         name = input("\nPlease type your name: ").title().strip()
         first, last = name.split(" ")
         break
     except ValueError:
-         print("\nBoth your first AND surname is required")
+        print("\nBoth your first AND surname is required")
 
+# user has an option to play game or input reading
 print("\nWhat would you like to do first " + first + "?" + " Improve your diabetes knowledge or record your BGL reading?")
 
 
 
 
 
-answer = input ("\nType YES for a quick game or NO to enter your reading: ") 
+answer = input ("\nType Yes for a quick game or NO to enter your reading: ") 
 
-if answer.lower() != "yes":
-# User will now complete the glucose recording pathway and skip the game    
+if answer.lower() != "Yes":# User will now complete the glucose recording pathway and skip the game    
     # glucose_reading = input("\nEnter the reading from your finger prick test: ")
     glucose_reading = float(input("\nEnter the number reading from your finger prick test: "))
     fasting = input("\nWere you fasting, Yes or No?: ").title
@@ -132,3 +130,36 @@ else:
     print("\nYou scored " + str(score) + "%" )
     # option to score each question by 1 point and then convert to % ie: print("\nYou scored " + str((score / 4) * 100) + "%" )
 
+
+
+
+
+
+# Questions as dictionary
+
+# from Question import Question
+
+ask_question = [
+"Which of these will control your blood sugar better?\n(a) Chocolate\n(b) Banana\n(c) Pizza\n\n",
+"Look out for food with a ___ Glycemic Index: high or low?\n(a) High\n(b) Low\n\n",
+"Daily exercise will help manage your diabetes:\n(a) True\n(b) False\n\n",
+"When should you do a glucose reading, before or after eating?\n(a) Makes no difference\n(b) After\n(c) Before\n\n",
+]
+
+questions = [
+    Question(ask_question[0], "b"),
+    Question(ask_question[1], "b"),
+    Question(ask_question[2], "a"),
+    Question(ask_question[3], "c"),
+]
+
+def begin_quiz(questions):
+    """This is def to ask user questions."""
+    score = 0
+    for question in questions:
+        answer = input(question.ask)
+        if answer == question.answer:
+            score +=25
+    print("You scored " + str(score) + "%" )
+
+begin_quiz(questions)
