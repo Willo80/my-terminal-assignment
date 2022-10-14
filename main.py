@@ -1,8 +1,9 @@
 # Diabetes tracker and educational game
 import datetime
 from Question import Question
+
 def main():
-    
+# Wrapped the entire code so that the user can have the option to restart at the end of quiz
     # user inputs full name
     while True:
         try:

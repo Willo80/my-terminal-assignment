@@ -1,0 +1,8 @@
+__pycache__/
+.env
+.venv
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+testing.py
