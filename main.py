@@ -14,15 +14,17 @@ while True:
 # user has an option to play game or input reading
 print("\nWhat would you like to do first " + first + "?" + " Improve your diabetes knowledge or record your BGL reading?")
 
-
-
-
-
-answer = input ("\nType Yes for a quick game or NO to enter your reading: ") 
-
-if answer.lower() != "Yes":# User will now complete the glucose recording pathway and skip the game    
-    # glucose_reading = input("\nEnter the reading from your finger prick test: ")
+play = "Yes"
+play = input ("\nType Yes for a quick game or NO to enter your reading: ").lower()
+if play != "yes":
     glucose_reading = float(input("\nEnter the number reading from your finger prick test: "))
+
+
+
+
+# User will now complete the glucose recording pathway and skip the game
+    # glucose_reading = input("\nEnter the reading from your finger prick test: ")
+    
     fasting = input("\nWere you fasting, Yes or No?: ").title
     if glucose_reading < 8 and fasting == "Yes":
         print("\nYour blood glucose level is normal")
@@ -63,34 +65,11 @@ else:
     print("\nYou can type the word 'skip' to move to the next question if you cannot answer.\nHere is your first question!")
 
     
-    
 
-
-
-    # # Quest 4
-    # quest_answer = input("\nQuestion 4 - Should you do a glucose reading before or after eating: before or after?: ").lower()
-    # if quest_answer == "before":
-    #     print("\nCorrect!")
-    #     score += 25
-    # else: 
-    #     print("\nIncorrect, try again!")
-    # while quest_answer != "before":
-    #     quest_answer = input("\nQuestion 4 - Should you do a glucose reading before or after eating: before or after?: ").lower()
-    #     if quest_answer == 'skip':
-    #         break
-    #     if quest_answer == "before":
-    #         print("\nCorrect!")
-
-    
-    # print("\nYou scored " + str(score) + "%" )
  
 
 
-
-# Questions as Class function
-# imported Question.py to keep code DRY here.
-
-from Question import Question
+# Questions as Class function from my created class function
 
 ask_question = [
 "\nWhich of these will control your blood sugar better?\n(a) Chocolate\n(b) Banana\n(c) Pizza\n\n",
