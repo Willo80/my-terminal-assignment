@@ -7,7 +7,7 @@ from termcolor import cprint
 from Question import Question
 
 def main():
-    '''Wrapped entire code - user has option to restart at end of quiz'''
+    """Wrapped entire code - user has option to restart at end of quiz"""
 
     # Input full name - surname used for future ref on app updates, but not in this first instance.
     while True:
@@ -74,7 +74,7 @@ def main():
     ]
 
     def begin_quiz(questions):
-        #def to ask user questions
+        """def to ask user selection of questions"""
         score = 0
         for question in questions:
             answer = input(question.ask)

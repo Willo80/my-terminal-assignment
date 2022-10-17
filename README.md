@@ -47,6 +47,8 @@ add all refs here
 
 ## Style Guide
 
+Acsess the PEP 8 SG for Python Code [Here](https://peps.python.org/pep-0008/#code-lay-out)
+
 pep -8? check this
 
 ## Features
