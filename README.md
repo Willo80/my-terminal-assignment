@@ -40,14 +40,13 @@ They will then follow the prompts and enter the information accordingly.
 
 add all refs here
 
-## App Repository 
+## App Repository
 
- <!-- include link to repo here ie: -->
- Click [here](https://github.com/) to open GITHUB or Rep etc
+Click [Here](https://github.com/Willo80/my-terminal-assignment.git)
 
 ## Style Guide
 
-Acsess the PEP 8 SG for Python Code [Here](https://peps.python.org/pep-0008/#code-lay-out)
+Access the PEP 8 SG for Python Code [Here](https://peps.python.org/pep-0008/#code-lay-out)
 
 pep -8? check this
 
@@ -63,13 +62,13 @@ pep -8? check this
    for future use, so that their name will be documented together with time/date of inputting their BGL, so that they can
    share the information with their diabates educator.
 
-   
-  ![View input/return function](vscode-remote://wsl%2Bubuntu-22.04/home/carol/T1A3/Function1%20example.jpg)
+
+  ![View input/return function](images/)
   
   
   <!-- - at least THREE features
 <!-- - describe each feature --> -->
-
+c
 
 <!-- - use of variables and the concept of variable scope
 - loops and conditional control structures
