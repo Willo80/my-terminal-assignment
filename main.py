@@ -1,13 +1,12 @@
 # Diabetes tracker and educational game
 import datetime
+from termcolor import cprint
 from Question import Question
-import sys
-from termcolor import colored, cprint
-
 
 def main():
-# Wrapped the entire code so that the user can have the option to restart at the end of quiz
-    # user inputs full name
+# Wrapped entire code - user has option to restart at end of quiz
+
+    # input full name - surname used for future ref on app updates, but not in this first instance.
     while True:
         try:
             name = input("\nPlease type your name: ").title().strip()
@@ -47,19 +46,16 @@ def main():
         exit()
 
 
-    # begin_quiz = input("Welcome to this quick knowldege quiz, would you like to play now?: " )
+    # Quiz begins here
     elif play == "yes":
         cprint("\nExcellent! There are 4 questions, try and score 100%", "green")
-        
-        # print("Type 'quit' to move to the next question")
-        play = input("Okay, are you ready? ").lower()
-        
+        # User can play or quit at this point if they don't want to continue
+        play = input("Okay, if you are ready type Yes, or No to quit: ").lower()
         if play != "yes":
             quit()
-        
 
-    # Questions as Class function from my created class function
 
+    # Q's' = my own Class function, allows updates in future
     ask_question = [
     "\nWhich of these will control your blood sugar better?\n(a) Chocolate\n(b) Banana\n(c) Pizza\n\n",
     "\nLook out for food with a ___ Glycemic Index: high or low?\n(a) High\n(b) Low\n\n",
@@ -75,7 +71,7 @@ def main():
     ]
 
     def begin_quiz(questions):
-        """This is def to ask user questions."""
+        """def to ask user questions."""
         score = 0
         for question in questions:
             answer = input(question.ask)
@@ -85,11 +81,12 @@ def main():
             else:
                 cprint("\nThat is incorrect", "red")
 
-        cprint("\nYou scored " + str(score) + "%" + "\n\nContinue learning more about diabetes for better control over your wellness", "green")
+        cprint("\nYou scored " + str(score) + "%"
+        + "\n\nContinue learning more about diabetes for better control over your wellness", "green")
 
     begin_quiz(questions)
-
-    restart=input("Would you like to return to the start and add your BGL?: ").lower()
+    # option to go back and enter BGL
+    restart=input("\nWould you like to return to the start and add your BGL?: ").lower()
     if restart == "yes":
         main()
     else:
