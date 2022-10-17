@@ -42,33 +42,40 @@ add all refs here
 
 ## App Repository
 
-Click [Here](https://github.com/Willo80/my-terminal-assignment.git)
+Click [Here](https://github.com/Willo80/my-terminal-assignment.git) to access repository
 
 ## Style Guide
 
-Access the PEP 8 SG for Python Code [Here](https://peps.python.org/pep-0008/#code-lay-out)
+Followed the PEP 8 SG for Python Code, access it [Here](https://peps.python.org/pep-0008/#code-lay-out)
 
 pep -8? check this
 
 ## Features
 
-1. **Name input function**
+1. **Name input function**  
 
-
-   This feature allows allows the user to input their full name, and will return
-   their first name when they are asked what they would like to do today.
-   The function will create a capital letter for their name regardless of what case they type in.
-   Although only their first name is returned in this app, (to make it more appropriatly personal), the full name request is
-   for future use, so that their name will be documented together with time/date of inputting their BGL, so that they can
-   share the information with their diabates educator.
-
+   This feature allows allows the user to input their full name, and will return their first name when they are asked what they would like to do today.
+   The function will create a capital letter for their name regardless of what case they type in. If they only enter theor first name the program will prompt them to fill in their full name before they can continue.
+   Although only their first name is returned in this app, making it appropriatly personal), the full name request is for future use, so that their name will be documented together with time/date of inputting their BGL, to share the information with their diabates educator.
 
   ![View input/return function](images/)
+
+2. **Glucose reading function**
+
+  This function takes a number input (expected as a possible float) from the user and uses it in an if elif statement, together with another user input to determine whether they were fasting or not. Based on their input, the outcome determines whether they have a high or low BGL and expresses what they should do about it. The time and date of the input is also automatically documented/processed.
+  This will be a future feature of the app to gather more informtaion regarding glucose times and levels.
+
+3. **Option to play an education game or record their Blood glucose level**
+
+
+
   
+
+4. **Game function**
   
   <!-- - at least THREE features
-<!-- - describe each feature --> -->
-c
+<!-- - describe each feature --> 
+
 
 <!-- - use of variables and the concept of variable scope
 - loops and conditional control structures
