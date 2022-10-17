@@ -59,7 +59,7 @@ MD032 lists [Here](https://github.com/DavidAnson/markdownlint/blob/v0.26.2/doc/R
 This feature allows allows the user to input their full name, and will return their first name when they are asked what they would like to do today. For error handling here I have used .title() which means it will not be case senstive and have also included .strip() a space remover either side of their name.
 The function will create a capital letter for their name regardless of what case they type in. If they only enter their first name the program will prompt them to fill in their full name before they can continue. Here is an except ValueError and is included in a while statement (with a break when both first name and surname is correctly entered)
 Although only their first name is returned in this app, making it appropriatly personal), the full name request is for future use, so that their name will be documented together with time/date of inputting their BGL, to share the information with their diabates educator.
-![View input/return function](images/)
+
 
 **Glucose reading input function**
 This function takes a number input (expected as a possible float) from the user and uses it in an if elif statement, (conditionals) together with another user input to determine whether they were fasting or not. Based on their input, the outcome determines whether they have a high or low BGL and expresses what they should do about it. The time and date of the input is also automatically documented/processed.
@@ -81,10 +81,9 @@ Here we have a Question class, which means keeping the code DRY, thus calling fu
 - Started designing the app flowchart, this chnaged along the way as some things/features became more obvious, for a logical working flow.
 - Began writing the code and this also changed with the flowchart evolving, and particulary when it came to ensuring that the code was DRY.
 
+ADD FLOW CHART SCREEN GRAB HERE and trello board
 
 
-
-Describe here - talk about getting approval , flow chart was key to design etc..as well as .. add screen grab.
 Develop an implementation plan which:
 - outlines how each feature will be implemented and a checklist of tasks for each feature
 - prioritise the implementation of different features, or checklist items within a feature
@@ -108,5 +107,3 @@ You must include:
 ```py
 def hello:
     print("hello")
-    ```
-

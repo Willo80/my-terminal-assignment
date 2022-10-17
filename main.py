@@ -34,7 +34,7 @@ def main():
             print("\nYour blood glucose level is normal")
 
         elif glucose_reading > 8 and fasting == "F":
-            print("\nYour reading is High, try to manage your diet and excersie, but see how a second reading goes today")
+            print("\nYour reading is High, try to manage your diet and exercise, but see how a second reading goes today")
 
         elif glucose_reading > 8 and fasting != "F":
             print("\nYour reading is high, but this could be because you had just eaten, a second fasting reading may be more accurate")
