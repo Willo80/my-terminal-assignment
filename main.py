@@ -14,7 +14,7 @@ def main():
             first, last = name.split(" ")
             break
         except ValueError:
-            cprint("\nBoth your first AND surname is required", "green")
+            cprint("\nBoth your first AND surname is required", "red")
 
     # user has an option to play game or input reading
     print("\nWhat would you like to do first " + first + "?" + " Improve your diabetes knowledge or record your BGL reading?")
@@ -42,14 +42,14 @@ def main():
             print("\nYour reading is low for having just eaten, a second fasting reading may be more accurate")
 
         # The date and time of input is recorded for future reference
-        print(f"\nThe time and date of your input is {datetime.datetime.now()}")
+        cprint(f"\nThe time and date of your input is {datetime.datetime.now()}", "green")
 
         exit()
 
 
     # begin_quiz = input("Welcome to this quick knowldege quiz, would you like to play now?: " )
     elif play == "yes":
-        print("\nExcellent! There are 4 questions, try and score 100%")
+        cprint("\nExcellent! There are 4 questions, try and score 100%", "green")
         
         # print("Type 'quit' to move to the next question")
         play = input("Okay, are you ready? ").lower()
@@ -57,7 +57,6 @@ def main():
         if play != "yes":
             quit()
         
-        print("\nYou can type the word 'skip' to move to the next question if you cannot answer.\nHere is your first question!")
 
     # Questions as Class function from my created class function
 
@@ -81,12 +80,12 @@ def main():
         for question in questions:
             answer = input(question.ask)
             if answer == question.answer:
-                print("\nCorrect!")
+                cprint("\nCorrect!", "green")
                 score +=25
             else:
-                print("\nThat is incorrect")
+                cprint("\nThat is incorrect", "red")
 
-        print("\nYou scored " + str(score) + "%" + "\n\nLearn more about diabetes for better control over your wellness" )
+        cprint("\nYou scored " + str(score) + "%" + "\n\nContinue learning more about diabetes for better control over your wellness", "green")
 
     begin_quiz(questions)
 
