@@ -53,6 +53,20 @@ pep -8? check this
 
 ## Features
 
+1. **Name input function**
+
+
+   This feature allows allows the user to input their full name, and will return
+   their first name when they are asked what they would like to do today.
+   The function will create a capital letter for their name regardless of what case they type in.
+   Although only their first name is returned in this app, (to make it more appropriatly personal), the full name request is
+   for future use, so that their name will be documented together with time/date of inputting their BGL, so that they can
+   share the information with their diabates educator.
+
+   
+  ![View input/return function](vscode-remote://wsl%2Bubuntu-22.04/home/carol/T1A3/Function1%20example.jpg)
+  
+  
   <!-- - at least THREE features
 <!-- - describe each feature --> -->
 
@@ -94,8 +108,6 @@ You must include:
 - how to use any command line arguments made for the application
 
 
-    # embedding an image:
-    ![cute pic of a cat](https://placekitten.com/200)
 
 <!-- could add some code here as an example using triple back ticks and py at beginning, to make it display must enable.. and say allow insecure content form http, I have notdne that yet. eg: -->
 ```py
