@@ -1,12 +1,15 @@
 # Diabetes tracker and educational game
+
 import datetime
+
 from termcolor import cprint
+
 from Question import Question
 
 def main():
-# Wrapped entire code - user has option to restart at end of quiz
+    '''Wrapped entire code - user has option to restart at end of quiz'''
 
-    # input full name - surname used for future ref on app updates, but not in this first instance.
+    # Input full name - surname used for future ref on app updates, but not in this first instance.
     while True:
         try:
             name = input("\nPlease type your name: ").title().strip()
@@ -15,13 +18,13 @@ def main():
         except ValueError:
             cprint("\nBoth your first AND surname is required", "red")
 
-    # user has an option to play game or input reading
-    print("\nWhat would you like to do first " + first + "?" + " Improve your diabetes knowledge or record your BGL reading?")
+    # Option to play game or input reading
+    cprint("\nWhat would you like to do first " + first + "?" + " Improve your diabetes knowledge or record your BGL reading?", "green")
 
     play = "Yes"
     fasting = "F"
 
-    # User will now complete the glucose recording pathway and skip the game
+    # User completes the glucose recording pathway - skips game
 
     play = input ("\nType Yes for a quick game or NO to enter your reading: ").lower()
     if play != "yes":
@@ -71,7 +74,7 @@ def main():
     ]
 
     def begin_quiz(questions):
-        """def to ask user questions."""
+        #def to ask user questions
         score = 0
         for question in questions:
             answer = input(question.ask)
@@ -85,7 +88,7 @@ def main():
         + "\n\nContinue learning more about diabetes for better control over your wellness", "green")
 
     begin_quiz(questions)
-    # option to go back and enter BGL
+    # Option to go back and enter BGL
     restart=input("\nWould you like to return to the start and add your BGL?: ").lower()
     if restart == "yes":
         main()
