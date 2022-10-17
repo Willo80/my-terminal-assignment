@@ -24,10 +24,9 @@ def main():
     play = "Yes"
     fasting = "F"
 
-    # User completes the glucose recording pathway - skips game
-
-    play = input ("\nType Yes for a quick game or NO to enter your reading: ").lower()
+    play = input ("\nType Yes for a quick multiplechoice game or NO to enter your reading: ").lower()
     if play != "yes":
+        # User completes the BGL pathway and skips game
         glucose_reading = float(input("\nEnter the number reading from your finger prick test: "))
         fasting = input("\nType in F if you were fasting or NF if you were not fastng: ").capitalize()
 

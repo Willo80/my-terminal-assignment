@@ -22,21 +22,22 @@
 
 The diabates tracker app is designed for a person with type 2 diabtetes, who would like to manage their diabetes by being able to track and document their blood glucose levels throughout the day. They can also improve their knowlegde and wellness by opting to do the multiple choice quiz which will help them identify good eating habits. They will receive a percentage of how well scored. The app so much potential for future updates, to create a more robust app with more educational questions and many other featurees that would be benefical to a person with diabetes.
 
-**What the Diabates Tracker App be able to do:**
+### What the Diabates Tracker App be able to do
 
 The user has the option of just enetering their blood glucose level or doing the multiple choice quiz or both. As the most important feature is adding the BGL reading, if they choose to go dowbn the quiz opathway first, at the end of the quiz they will have the option of going back to the start and inputting their reading. Apon inouting the BGL reading they will be prompted to input whether they were fastiunbg nor not and then based on the resulst they will inform them whether their sugar is too high or too low and what they can do about it.
 
-**The Target Audience)**
+### The Target Audience
 
 - This Diabates Tracker App is for a person with type 2 diabates, who would like to track and manage thier blood sugar levels and inprove their knowldege for future wellness.
 - The usre should be using the finger prick method and BGL reading device to determine the digital reading.
 
-**How the to use Diabates Tracker App**
+### How the to use Diabates Tracker App
 
-Will use the executable file to launch tracker from the terminal (see [Installation](#Installation) in this document)
+Will use the executable file to launch tracker from the terminal (see [Installation](#Help/Install Documentation) in this document)
 They will then follow the prompts and enter the information accordingly.
 
 ## References
+
 Source reference [Here](https://www.diabetesaustralia.com.au/news-resources/useful-links/)
 
 Source reference [Here](https://www.gisymbol.com/low-gi-products/#product-grid+product_cat:fruit-vegetables)
@@ -54,25 +55,33 @@ MD032 lists [Here](https://github.com/DavidAnson/markdownlint/blob/v0.26.2/doc/R
 
 ## Features
 
-**Name input function**
+**Name input function**  
 This feature allows allows the user to input their full name, and will return their first name when they are asked what they would like to do today. For error handling here I have used .title() which means it will not be case senstive and have also included .strip() a space remover either side of their name.
 The function will create a capital letter for their name regardless of what case they type in. If they only enter their first name the program will prompt them to fill in their full name before they can continue. Here is an except ValueError and is included in a while statement (with a break when both first name and surname is correctly entered)
 Although only their first name is returned in this app, making it appropriatly personal), the full name request is for future use, so that their name will be documented together with time/date of inputting their BGL, to share the information with their diabates educator.
 ![View input/return function](images/)
 
 **Glucose reading input function**
-  This function takes a number input (expected as a possible float) from the user and uses it in an if elif statement, (conditionals) together with another user input to determine whether they were fasting or not. Based on their input, the outcome determines whether they have a high or low BGL and expresses what they should do about it. The time and date of the input is also automatically documented/processed.
-  This will be a future feature of the app to gather more informtaion regarding glucose times and levels.
+This function takes a number input (expected as a possible float) from the user and uses it in an if elif statement, (conditionals) together with another user input to determine whether they were fasting or not. Based on their input, the outcome determines whether they have a high or low BGL and expresses what they should do about it. The time and date of the input is also automatically documented/processed.
+This will be a future feature of the app to gather more informtaion regarding glucose times and levels.
 
 **Option to play an education game or record their Blood glucose level**
-  The user has an option to play an education multiple choice game or go straight to entering their blood glucose level reading.
-  If they choose Yes, they willplay the game and if they choose No they will go down the BGL pathway. 
-  As it is still important for them to document their BGL reading, they are given the option at the end of the game to return to the begining and do so.
+The user has an option to play an education multiple choice game or go straight to entering their blood glucose level reading.
+If they choose Yes, they willplay the game and if they choose No they will go down the BGL pathway.
+As it is still important for them to document their BGL reading, they are given the option at the end of the game to return to the begining and do so.
 
-**Begin quiz function**
+**Begin quiz function**  
 Here we have a Question class, which means keeping the code DRY, thus calling functions from this class. Also, for future upgrades of the app more questions can be created/added to the Question class, and the ability to 'append' and 'pop' could come into play here as a question list (mutable) is included here. This would allow for a different question selection each time player plays the educational game.
 
 ## Implemenation Plan
+
+- Approval for app receieved from the a CoderAcademy educator.
+- Researched some diabetes websites and nthe apple iphone app store for some    ideas and educational information.
+- Set up my Trello board and added some contnent, ie. design flowchart and outcomes.
+- Started designing the app flowchart, this chnaged along the way as some things/features became more obvious, for a logical working flow.
+- Began writing the code and this also changed with the flowchart evolving, and particulary when it came to ensuring that the code was DRY.
+
+
 
 
 Describe here - talk about getting approval , flow chart was key to design etc..as well as .. add screen grab.
