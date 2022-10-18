@@ -9,6 +9,8 @@ from Question import Question
 def main():
     """Wrapped entire code - user has option to restart at end of quiz"""
 
+    print("\nLet's get tracking")      
+
     # Input full name - surname used for future ref on app updates, but not in this first instance.
     while True:
         try:
