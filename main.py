@@ -24,7 +24,7 @@ def main():
     play = "Yes"
     fasting = "F"
 
-    play = input ("\nType Yes for a quick multiplechoice game or NO to enter your reading: ").lower()
+    play = input ("\nType Yes for a quick multiple-choice game or NO to enter your reading: ").lower()
     if play != "yes":
         # User completes the BGL pathway and skips game
         glucose_reading = float(input("\nEnter the number reading from your finger prick test: "))
@@ -85,6 +85,10 @@ def main():
 
         cprint("\nYou scored " + str(score) + "%"
         + "\n\nContinue learning more about diabetes for better control over your wellness", "green")
+        if score <= 50:
+            cprint("The more you know the better, feel free to try again?", "red")
+        elif score > 51:
+            cprint("Your knowledge is improving!", "green")
 
     begin_quiz(questions)
     # Option to go back and enter BGL
