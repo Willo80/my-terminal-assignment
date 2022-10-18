@@ -44,6 +44,8 @@ Source reference [Here](https://www.gisymbol.com/low-gi-products/#product-grid+p
 
 Source reference [Here](https://www.cdc.gov/diabetes/managing/managing-blood-sugar/bloodglucosemonitoring.html)
 
+Python Package Index - PyPI. (Van Kemenade, 2022). Python Software Foundation. Retrieved from [Here](https://pypi.org/project/termcolor/)
+
 ## App Repository
 
 Click [Here](https://github.com/Willo80/my-terminal-assignment.git) to access repository

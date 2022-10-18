@@ -15,7 +15,7 @@ def main():
     while True:
         try:
             name = input("\nPlease type your name: ").title().strip()
-            first, last = name.split(" ")
+            first, last = name.split(" ") # the last name will be called when the app is updgraded in future
             break
         except ValueError:
             cprint("\nBoth your first AND surname is required", "red")
@@ -99,5 +99,5 @@ def main():
         main()
     else:
         exit()
-
+    
 main()
