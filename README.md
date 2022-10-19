@@ -57,24 +57,29 @@ MD032 lists [Here](https://github.com/DavidAnson/markdownlint/blob/v0.26.2/doc/R
 
 ## Features
 
-**Name input**  
+### **Name input**  
+
 This feature allows allows the user to input their full name, and will return their first name when they are asked what they would like to do today. For error handling here I have used .title() which means it will not be case senstive and have also included .strip() a space remover either side of their name.
 The function will create a capital letter for their name regardless of what case they type in. If they only enter their first name the program will prompt them to fill in their full name before they can continue. Here is an except ValueError and is included in a while statement (with a break when both first name and surname is correctly entered)
 Although only their first name is returned in this app, making it appropriatly personal), the full name request is for future use, so that their name will be documented together with time/date of inputting their BGL, to share the information with their diabates educator.
 
-**Glucose reading input**
+### **Glucose reading input**
+
 This function takes a number input (expected as a possible float) from the user and uses it in an if elif statement, (conditionals) together with another user input to determine whether they were fasting or not. Based on their input, the outcome determines whether they have a high or low BGL and expresses what they should do about it. There is an exception error handing condition here that will enusre that only a number is accepted.It can be a whole number or a float. The BGL reading are usually flots so I have built this to capture that probable instance. The time and date of the input is also automatically documented/processed.
 This will be a future feature of the app to gather more informtaion regarding glucose times and levels and perhapas out put as a bar chart using matplotlib (available in Pypi.org)
 
-**Fasting input**
+### **Fasting input**
+
 It is essential to the app that the user inputs whether they have eaten or not as it determines the outcome of their BGL reading. Whether fasting or not fasting contributes to their low or high BGL reading and what the suggestion is to do to control their wellness based on the results.
 
-**Option to play an education game or record their Blood glucose level**
+### **Option to play an education game or record their Blood glucose level**
+
 The user has an option to play an education multiple choice game or go straight to entering their blood glucose level reading.
 If they choose Yes, they will play the game and if they choose No they will go down the BGL pathway.
 As it is still important for them to document their BGL reading, they are then also given the option at the end of the game to return to the begining inout their reading.
 
-**Begin quiz**  
+### **Begin quiz**
+
 Here we have a Question class, which means keeping the code DRY, thus calling functions from this class. Also, for future upgrades of the app more questions can be created/added to the Question class, and the ability to 'append' and 'pop' could come into play here as a question list (mutable) is included here. This would allow for a different question selection each time player plays the educational game.
 The quiz has a score variable which totals the final amount to determine whether they passed or not. They are given appropriate feedback based on their result and encouraged to do better. They have an option to start again.
 
@@ -90,7 +95,7 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 
 ## Feature tasks/checklist:
 
-### [Name Input:](#Features)
+### [Name Input:](#name-input)
 
 - Input full name
 - Call only the first name
@@ -98,7 +103,7 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 - Error handling
 - Explanation statements
 
-### [Glucose Reading:](#Features)
+### [Glucose Reading:](#glucose-reading-input)
 
 - Create a float user input
 - error handling for number only entry
@@ -106,7 +111,7 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 - Fasting input - essential
 - Create output statements
 
-### [Option to play or record BGL:](#Features)
+### [Option to play or record BGL:](#option-to-play-an-education-game-or-record-their-blood-glucose-level)
 
 - Create an input for Yes or No
 - if else required
@@ -114,7 +119,7 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 - No must go straight to BGL input
 - Create output statements of encouragement
 
-### [Quiz - multiple choice :](#Features)
+### [Quiz - multiple choice :](#begin-quiz)
 
 - Research appropriate diabetes questions
 - multiple chice layout
