@@ -8,9 +8,9 @@
 - [References](#references) 
 - [App Repository](#app-repository)
 - [Style Guide](#style-guide)
-- [Features](#Features)
+- [Features](#features)
 - [Implemention Plan](#implemenation-plan)
-- [Help/Install Documentation](#help-install-documentation)
+- [Help/Install Documentation](#installation)
 
 ## Related Documents
 
