@@ -10,7 +10,7 @@
 - [Style Guide](#style-guide)
 - [Features](#features)
 - [Implemention Plan](#implemenation-plan)
-- [Installation](#Design help documentation which includes a set of instructions which accurately describe how to use and install the application)
+- [Help and Installation](#help-and-installation)
 
 ## Related Documents
 
@@ -87,7 +87,7 @@ The quiz has a score variable which totals the final amount to determine whether
 
 - Approval for app receieved from the a CoderAcademy educator.
 - Researched some diabetes websites and the apple iphone app store for some ideas and educational information.
-- Set up my Trello board and added some content, ie. design flowchart and outcomes.
+- Set up my Trello board [Access it here](https://trello.com/invite/b/xYGLG3I0/ATTIf5b890746903b998e9fc6efbc5f7f5206CF52825/terminal-app-assignment) and added some content, ie. design flowchart and outcomes.
 - Started designing the app flowchart, this changed along the way as some things/features became more obvious, for a logical working flow.
 - Began writing the code and this also changed with the flowchart evolving, and particulary when it came to ensuring that the code was DRY.
 
@@ -119,7 +119,7 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 - No must go straight to BGL input
 - Create output statements of encouragement
 
-### [Quiz_multiple_choice:](#Begin quiz_Class function)
+### [Quiz multiple choice:](#quiz-multiple-choice)
 
 - Research appropriate diabetes questions
 - multiple chice layout
@@ -129,7 +129,7 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 - create a score variable
 - allow user to resart at end of quiz
 
-## [Installation:](#Design help documentation which includes a set of instructions which accurately describe how to use and install the application)
+## [Help and Installation:](#help-and-installation)
 
 You must include
 
