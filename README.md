@@ -14,7 +14,7 @@
 
 ## Related Documents
 
-- [Software Development Plan](#software-development-plan)
+- [SLIDE DECK VIDEO - Development Walkthrough](https://vimeo.com/763209952/191aaef127)
 
 ## Software Development Plan
 
