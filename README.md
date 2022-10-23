@@ -65,7 +65,7 @@ Although only their first name is returned in this app, making it appropriatly p
 
 ### **Glucose reading input**
 
-This function takes a number input (expected as a possible float) from the user and uses it in an if elif statement, (conditionals) together with another user input to determine whether they were fasting or not. Based on their input, the outcome determines whether they have a high or low BGL and expresses what they should do about it. There is an exception error handing condition here that will enusre that only a number is accepted.It can be a whole number or a float. The BGL reading are usually floats which is the reason I have built this to capture that probable instance. The time and date of the input is also automatically documented/processed.
+This function takes a number input (expected as a possible float) from the user and uses it in an if elif statement, (conditionals) together with another user input to determine whether they were fasting or not. Based on their input, the outcome determines whether they have a high or low BGL and expresses what they should do about it. There is an exception error handing condition here that will ensure that only a number is accepted. It can be a whole number or a float. The BGL reading are usually floats which is the reason I have built this to capture that probable instance. The time and date of the input is also automatically documented/processed.
 This will be a future feature of the app to gather more information regarding glucose times and levels and perhaps out put as a bar chart using matplotlib (available in Pypi.org)
 
 ### **Fasting input**
@@ -137,10 +137,4 @@ You must include
 - any dependencies required by the application to operate
 - any system/hardware requirements
 - how to use any command line arguments made for the application
-
-
-
-<!-- could add some code here as an example using triple back ticks and py at beginning, to make it display must enable.. and say allow insecure content form http, I have notdne that yet. eg: -->
-```py
-def hello:
-    print("hello")
+  
