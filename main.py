@@ -51,8 +51,8 @@ def main():
         elif glucose_reading < 8 and fasting != "F":
             print("\nYour reading is low for having just eaten, a second fasting reading may be more accurate")
 
-            # The date and time of input is recorded for future reference
-            cprint(f"\nThe time and date of your input is {datetime.datetime.now()}", "green")
+        # The date and time of input is recorded for future reference
+        cprint(f"\nThe time and date of your input is {datetime.datetime.now()}", "green")
 
         exit()
 

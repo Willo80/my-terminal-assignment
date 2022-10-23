@@ -5,7 +5,7 @@
 
 ## Table of Contents
 
-- [References](#references) 
+- [References](#references)
 - [App Repository](#app-repository)
 - [Style Guide](#style-guide)
 - [Features](#features)
@@ -59,14 +59,14 @@ MD032 lists [Here](https://github.com/DavidAnson/markdownlint/blob/v0.26.2/doc/R
 
 ### **Name input**  
 
-This feature allows allows the user to input their full name, and will return their first name when they are asked what they would like to do today. For error handling here I have used .title() which means it will not be case senstive and have also included .strip() a space remover either side of their name.
-The function will create a capital letter for their name regardless of what case they type in. If they only enter their first name the program will prompt them to fill in their full name before they can continue. Here is an except ValueError and is included in a while statement (with a break when both first name and surname is correctly entered)
-Although only their first name is returned in this app, making it appropriatly personal), the full name request is for future use, so that their name will be documented together with time/date of inputting their BGL, to share the information with their diabates educator.
+This feature allows the user to input their full name, and will return their first name when they are asked what they would like to do today. For error handling here I have used .title() which means it will not be case sensitive and have also included .strip() a space remover either side of their name.
+The program will create a capital letter for their name regardless of what case they type in. If they only enter their first name the program will prompt them to fill in their full name before they can continue. This has an except ValueError and is contained in a while loop (with a break when both first name and surname is correctly entered)
+Although only their first name is returned in this app, making it appropriatly personal), the full name request is for future use, so that their name will be documented together with time/date of inputting their BGL, to share the information with their diabetes educator.
 
 ### **Glucose reading input**
 
-This function takes a number input (expected as a possible float) from the user and uses it in an if elif statement, (conditionals) together with another user input to determine whether they were fasting or not. Based on their input, the outcome determines whether they have a high or low BGL and expresses what they should do about it. There is an exception error handing condition here that will enusre that only a number is accepted.It can be a whole number or a float. The BGL reading are usually flots so I have built this to capture that probable instance. The time and date of the input is also automatically documented/processed.
-This will be a future feature of the app to gather more informtaion regarding glucose times and levels and perhapas out put as a bar chart using matplotlib (available in Pypi.org)
+This function takes a number input (expected as a possible float) from the user and uses it in an if elif statement, (conditionals) together with another user input to determine whether they were fasting or not. Based on their input, the outcome determines whether they have a high or low BGL and expresses what they should do about it. There is an exception error handing condition here that will enusre that only a number is accepted.It can be a whole number or a float. The BGL reading are usually floats which is the reason I have built this to capture that probable instance. The time and date of the input is also automatically documented/processed.
+This will be a future feature of the app to gather more information regarding glucose times and levels and perhaps out put as a bar chart using matplotlib (available in Pypi.org)
 
 ### **Fasting input**
 
@@ -76,12 +76,12 @@ It is essential to the app that the user inputs whether they have eaten or not a
 
 The user has an option to play an education multiple choice game or go straight to entering their blood glucose level reading.
 If they choose Yes, they will play the game and if they choose No they will go down the BGL pathway.
-As it is still important for them to document their BGL reading, they are then also given the option at the end of the game to return to the begining inout their reading.
+As it is still important for them to document their BGL reading, they are then also given the option at the end of the game to return to the begining input their reading.
 
-### **Begin quiz**
+### **Begin quiz (Class function)**
 
-Here we have a Question class, which means keeping the code DRY, thus calling functions from this class. Also, for future upgrades of the app more questions can be created/added to the Question class, and the ability to 'append' and 'pop' could come into play here as a question list (mutable) is included here. This would allow for a different question selection each time player plays the educational game.
-The quiz has a score variable which totals the final amount to determine whether they passed or not. They are given appropriate feedback based on their result and encouraged to do better. They have an option to start again.
+Here we have a Question class, which means keeping the code DRY, thus calling functions from this class. Also, for future upgrades of the app more questions can be created/added to the Question Class function, and the ability to 'append' and 'pop' could come into play here as a list is mutable. This would allow for a different question selection each time player plays the educational game.
+The quiz has a score variable which totals the final amount to determine whether they passed or not. They are given appropriate and immediate feedback based on their result and encouraged to do better. They have an option to start again.
 
 ## Implemenation Plan
 
@@ -93,7 +93,7 @@ The quiz has a score variable which totals the final amount to determine whether
 
 ADD FLOW CHART SCREEN GRAB HERE and trello board
 
-## Feature tasks/checklist:
+## Feature tasks/checklist
 
 ### [Name Input:](#name-input)
 
@@ -131,7 +131,8 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 
 ## Installation  <!-- Design help documentation which includes a set of instructions which accurately describe how to use and install the application) -->
 
-You must include:
+You must include
+
 - steps to install the application
 - any dependencies required by the application to operate
 - any system/hardware requirements
