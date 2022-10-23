@@ -10,7 +10,7 @@
 - [Style Guide](#style-guide)
 - [Features](#features)
 - [Implemention Plan](#implemenation-plan)
-- [Help/Install Documentation](#installation)
+- [Installation](#Design help documentation which includes a set of instructions which accurately describe how to use and install the application)
 
 ## Related Documents
 
@@ -78,12 +78,12 @@ The user has an option to play an education multiple choice game or go straight 
 If they choose Yes, they will play the game and if they choose No they will go down the BGL pathway.
 As it is still important for them to document their BGL reading, they are then also given the option at the end of the game to return to the begining input their reading.
 
-### **Begin quiz (Class function)**
+### **Begin quiz_Class function**
 
 Here we have a Question class, which means keeping the code DRY, thus calling functions from this class. Also, for future upgrades of the app more questions can be created/added to the Question Class function, and the ability to 'append' and 'pop' could come into play here as a list is mutable. This would allow for a different question selection each time player plays the educational game.
 The quiz has a score variable which totals the final amount to determine whether they passed or not. They are given appropriate and immediate feedback based on their result and encouraged to do better. They have an option to start again.
 
-## Implemenation Plan
+## **Implemenation Plan**
 
 - Approval for app receieved from the a CoderAcademy educator.
 - Researched some diabetes websites and the apple iphone app store for some ideas and educational information.
@@ -119,7 +119,7 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 - No must go straight to BGL input
 - Create output statements of encouragement
 
-### [Quiz - multiple choice :](#begin-quiz)
+### [Quiz_multiple_choice:](#Begin quiz_Class function)
 
 - Research appropriate diabetes questions
 - multiple chice layout
@@ -129,7 +129,7 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 - create a score variable
 - allow user to resart at end of quiz
 
-## Installation  <!-- Design help documentation which includes a set of instructions which accurately describe how to use and install the application) -->
+## [Installation:](#Design help documentation which includes a set of instructions which accurately describe how to use and install the application)
 
 You must include
 
