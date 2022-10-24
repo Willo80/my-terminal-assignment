@@ -131,8 +131,12 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 
 ## [Help and Installation:](#help-and-installation)
 
-- steps to install the application
-- Dependencies required by the application to operate
-- System/hardware requirements
-- Using command line arguments made for the application
+### To access the Diabetes App tracker please do the following
+
+1. Ensure that you have Python 3 installed on your computer
+2. If you do not have Python installed, you can downlaod it from here [Download Python 3](https://www.python.org/downloads/)
+3. Please access this application from the GitHub repository [here](https://github.com/Willo80/my-terminal-assignment.git)
+4. Once you have cloned the repository open the src file and choose main.py.
+5. You will be asked to enter your blood glucose level reading so please ensure that you have already done your finger prick test.
+6. Take the opportunity to learn more about diabetes by doing the multiple choice quiz and look after you wellness.
   
