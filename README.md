@@ -131,10 +131,8 @@ ADD FLOW CHART SCREEN GRAB HERE and trello board
 
 ## [Help and Installation:](#help-and-installation)
 
-You must include
-
 - steps to install the application
-- any dependencies required by the application to operate
-- any system/hardware requirements
-- how to use any command line arguments made for the application
+- Dependencies required by the application to operate
+- System/hardware requirements
+- Using command line arguments made for the application
   
