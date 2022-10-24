@@ -37,7 +37,7 @@ def main():
             except ValueError:
                 cprint("That is not a number, please type the number reading from your finger prick device", "red")
             
-        fasting = input("\nType in F if you were fasting or NF if you were not fastng: ").capitalize()
+        fasting = input("\nType in F if you were fasting or NF if you were not fasting: ").capitalize()
 
         if glucose_reading < 8 and fasting == "F":
             print("\nYour blood glucose level is normal")
