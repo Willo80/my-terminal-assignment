@@ -48,7 +48,7 @@ Python Package Index - PyPI. (Van Kemenade, 2022). Python Software Foundation. R
 
 ## App Repository
 
-Click [Here](https://github.com/Willo80/my-terminal-assignment.git) to access repository
+Click [Here](https://github.com/Willo80/my-terminal-assignment.git) to access the src file in the repository
 
 ## Style Guide
 
